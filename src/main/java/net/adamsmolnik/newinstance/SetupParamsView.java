@@ -13,4 +13,7 @@ public interface SetupParamsView {
     String getImageId();
 
     String getServiceContext();
+
+    boolean usePrivateOutboundAdresses();
+
 }

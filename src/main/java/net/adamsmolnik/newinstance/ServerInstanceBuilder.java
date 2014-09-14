@@ -1,6 +1,5 @@
 package net.adamsmolnik.newinstance;
 
-
 /**
  * @author ASmolnik
  *

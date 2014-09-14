@@ -12,6 +12,8 @@ public interface ServerInstance {
 
     String getPublicIpAddress();
 
+    String getPrivateIpAddress();
+
     void scheduleCleanup(int delay, TimeUnit unit);
 
 }

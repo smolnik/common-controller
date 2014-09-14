@@ -14,7 +14,7 @@ import net.adamsmolnik.newinstance.SenderException;
  */
 @Dependent
 public class JsonPostSender<T, R> implements Sender<T, R> {
-    
+
     @Override
     public R trySending(String serviceUrl, T request, Class<R> responseClass, SendingParams params) {
         int attemptCounter = 0;
