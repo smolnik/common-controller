@@ -12,7 +12,7 @@ public class SendingParams {
 
     private int attemptIntervalSecs = 0;
 
-    private Consumer<String> logExceptiomAttemptConsumer = (message) -> {
+    private Consumer<String> logExceptiomAttemptConsumer = message -> {
     };
 
     public SendingParams withNumberOfAttempts(int value) {
