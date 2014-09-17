@@ -14,8 +14,6 @@ public class SetupParams implements SetupParamsView {
 
     private String serviceContext;
 
-    private boolean usePrivateOutboundAdresses;
-
     public SetupParams withLabel(String value) {
         label = value;
         return this;
@@ -33,11 +31,6 @@ public class SetupParams implements SetupParamsView {
 
     public SetupParams withServiceContext(String value) {
         serviceContext = value;
-        return this;
-    }
-
-    public SetupParams withUsePrivateOutboundAdresses(boolean value) {
-        usePrivateOutboundAdresses = value;
         return this;
     }
 
@@ -59,11 +52,6 @@ public class SetupParams implements SetupParamsView {
     @Override
     public String getServiceContext() {
         return serviceContext;
-    }
-
-    @Override
-    public boolean usePrivateOutboundAdresses() {
-        return usePrivateOutboundAdresses;
     }
 
 }

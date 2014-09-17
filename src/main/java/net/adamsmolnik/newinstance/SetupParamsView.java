@@ -14,6 +14,4 @@ public interface SetupParamsView {
 
     String getServiceContext();
 
-    boolean usePrivateOutboundAdresses();
-
 }

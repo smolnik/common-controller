@@ -44,7 +44,8 @@ public class JsonPostSender<T, R> implements Sender<T, R> {
 
     @Override
     public R send(String serviceUrl, T request, Class<R> responseClass) {
-        Client client = ClientBuilder.newClient();
+        Client client = ClientBuilder.newClient().property("jersey.config.client.connectTimeout", 5000)
+                .property("jersey.config.client.readTimeout", 5 * 60 * 1000);
         Entity<T> requestEntity = Entity.json(request);
         Response response = client.target(serviceUrl).request().post(requestEntity);
         return response.readEntity(responseClass);
