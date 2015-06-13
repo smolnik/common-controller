@@ -14,7 +14,7 @@ public interface ServerInstance extends AutoCloseable {
 
     String getPrivateIpAddress();
 
-    void scheduleCleanup(int delay, TimeUnit unit);
+    void scheduleCleanup(int delay, TimeUnit unit, Runnable runnable);
 
     void close();
 

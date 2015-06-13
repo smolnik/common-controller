@@ -16,8 +16,7 @@ public interface QueueEndpoint {
 
     <T, R> void handleJson(Function<T, R> inputMessageProcessor, Class<T> inputMessageClass, String queueIn, String queueOut);
 
-    <T, R> void handle(Function<T, R> inputMessageProcessorProcessor, Function<String, T> inputMessageProcessorMapper, String queueIn,
-            Optional<String> queueOut);
+    <T, R> void handle(Function<T, R> inputMessageProcessorProcessor, Function<String, T> inputMessageProcessorMapper, String queueIn, Optional<String> queueOut);
 
     void shutdown();
 
